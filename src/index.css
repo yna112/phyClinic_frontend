@@ -1,0 +1,377 @@
+/*html,body,#root{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding:auto ;
+  }
+  */
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+  /* .my-containerHome{
+    width: 100vw;
+    height: 100vh;
+    
+  } */
+  .my-containerHome{
+    /*background-image: url("/public/images/backg.jpg");*/
+    width: 100%;
+    height: 750px;
+  
+  }
+  
+  
+  
+  
+  .my-containerTable{
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  
+  .my-containerHeader{
+    /* width: 100vw;
+    height: 100vh; */
+    /* background-image: url("../../Assets/backg.jpg"); */
+    /* height: 260px;;
+    width: 1290px; */
+  
+    
+  }
+  
+  
+  
+  
+  /* .my-containerHead{
+    height: 260px;;
+    width: 1290px;
+  
+  } */
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+  }
+  
+  
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  
+  .flex-center-class{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+  }
+  
+  .flex-cil-top-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+  
+  }
+  
+  .flex-row{
+      display:inline-flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      gap: 20px;
+    
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.clinic-title {
+    margin-right: 20px;
+}
+  
+  .flex-around{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+  }
+  
+  .card > img{
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+  }
+  
+  .single-line-only{
+    white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inherit;
+  height: 30px;
+  }
+  
+  
+  .flex-row-none-wrap-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+  
+  }
+  
+  .TodoItem > .card{
+    border: 5px solid;
+  }
+  
+  .link{
+    color: black;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    
+  }
+  
+  .link:hover{
+    color: royalblue;
+    /* border-bottom: 3px solid royalblue; */
+    font-weight: 700;
+    font-size: xx-large;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+  .button-success {
+    height: 30px;
+    width: 100px;
+    background-color:green; /* Red */
+   transition-duration: 0.4s;
+   color: white;
+  }
+  
+  .button-success:hover {
+    background-color: white; /* Green */
+    color:green;
+  }
+  
+  .button-success:disabled {
+    height: 30px;
+    width: 100px;
+    background-color:gray; /* Red */
+   transition-duration: 0.4s;
+   color: white;
+  }
+  
+  
+  .button-danger {
+    height: 30px;
+    width: 100px;
+    background-color:red; /* Red */
+   transition-duration: 0.4s;
+   color: white;
+  }
+  
+  .button-danger:hover {
+    background-color:white; /* Red */
+    color: red;
+  }
+  
+  .button {
+    height: 30px;
+    width: 100px;
+    background-color:gray; /* Red */
+   transition-duration: 0.4s;
+   color: white;
+  }
+  
+  .button:hover {
+    background-color:white; /* Red */
+    color:gray;
+  }
+  
+  /* The container must be positioned relative: */
+  .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-container {
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 10px;
+  }
+  
+  .flip-card-back .iconImage{
+    height: 12px;
+    width: 12px;
+  }
+  
+  /* styles.css */
+  .FlexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* width: 65%; */
+    /* background-color: #2f1d58; */
+    /* height: 80vh; */
+    /* overflow: auto; */
+    flex-direction: column;
+  }
+  
+  .FlexContainer menu {
+    width: 60px;
+    height: 48px;
+    margin: 5px;
+    background-color: lightblue;
+  }
+  
+  .addLink{
+    /* pointer-events: none; */
+  }
+  
+  
+    
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .DemoHomePage2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    
+  }
+  
+  .iconImage{
+    margin-right: 130px 210px 150px 410px;
+  }
+  
+  .disabledCursor { 
+    cursor: default;
+  }
+  
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
