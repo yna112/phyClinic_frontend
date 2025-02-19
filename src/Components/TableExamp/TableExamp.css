@@ -1,69 +1,69 @@
+
 .TableExamp {
-    width: 150%; /* מרחיב את הרוחב */
-    margin: 0 auto;
-    background: #f0f0f0; /* רקע כללי */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    direction: rtl; /* יישור לימין */
-  }
-  
-  input[type="text"] {
-    width: calc(100% - 40px); /* רוחב של קלט החיפוש */
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    padding: 16px; /* צר יותר */
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-    white-space: nowrap; /* מונע שבירת שורות */
-  }
-  
-  th {
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:disabled {
-    background-color: #ccc;
-  }
-  
-  button:hover:not(:disabled) {
-    background-color: #0056b3;
-  }
-  
+  width: 88%; /* מרחיב את הרוחב */
+  margin: 0 auto;
+  background:url(); /* רקע כללי שמקבל את הרקע הנוכחי של העמוד */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  direction: rtl; /* יישור לימין */
+}
+
+input[type="text"] {
+  width: calc(100% - 40px); /* רוחב של קלט החיפוש */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 16px; /* צר יותר */
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap; /* מונע שבירת שורות */
+}
+
+th {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ccc;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}

@@ -53,6 +53,7 @@ function TableExamp(): JSX.Element {
       setCurrentPage(currentPage - 1);
     }
   };
+  
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(event.target.value);

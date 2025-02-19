@@ -1,3 +1,14 @@
 .Main {
+    background-image: url('../../assets/background_forPages.webp'); /* נתיב נכון לתמונה */
+    background-size: cover; /* התמונה תתפרס על כל שטח האלמנט */
+    background-position: center center; /* התמונה ממוקמת במרכז הרקע */
+    background-repeat: no-repeat; /* התמונה לא תחזור על עצמה */
 	
 }
+
+.Shugul{
+    background-size: cover; /* התמונה תתפרס על כל שטח האלמנט */
+    background-position: center center; /* התמונה ממוקמת במרכז הרקע */
+    background-repeat: no-repeat; /* התמונה לא תחזור על עצמה */
+}
+

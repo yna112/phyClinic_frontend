@@ -1,0 +1,167 @@
+/* WeeklyTable.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.WeeklyTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; /* מינימום גובה 100% מהמסך */
+    direction: rtl; /* כיוון מימין לשמאל */
+}
+
+.table-responsive {
+    width: 100%;
+    position: relative;
+
+    max-width: 1200px; /* הגבלת רוחב */
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+.padding-5px-tb {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.padding-15px-lr {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.margin-10px-bottom {
+    margin-bottom: 10px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.font-size16 {
+    font-size: 16px;
+}
+
+.xs-font-size13 {
+    font-size: 13px;
+}
+
+.bg-sky {
+    background-color: #9387eb;
+}
+
+.bg-green {
+    background-color: #28a745;
+}
+
+.bg-yellow {
+    background-color: #ffc107;
+}
+
+.bg-purple {
+    background-color: #6f42c1;
+}
+
+.bg-lightred {
+    background-color: #f8d7da;
+}
+
+.bg-pink {
+    background-color: #e83e8c;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-light-gray {
+    color: #1c3045;
+}
+
+.margin-10px-top {
+    margin-top: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .week-button {
+    position: absolute;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  
+  .previous-week {
+    right: 150px;
+    top: 46px;
+  }
+  
+  .next-week {
+    right: 50px;
+    top: 46px;
+  }
+  button:first-of-type {
+    right: 150px; /* הכפתור "שבוע קודם" ימוקם יותר שמאלה */
+    top: 46px;
+  }
+  
+  button:last-of-type {
+    right: 50px; /* הכפתור "שבוע הבא" ימוקם יותר קרוב לימין */
+    top: 46px;
+  }
+  
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  

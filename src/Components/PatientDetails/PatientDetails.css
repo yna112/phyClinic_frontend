@@ -1,3 +1,169 @@
-.PatientDetails {
-	
-}
+/*
+.patient-card {
+    text-align: right;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+*/
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header .reservation-id {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .header .manual-appointment {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .patient-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .patient-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #c78cff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .patient-details h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .patient-details .status {
+    background-color: #e0f7d4;
+    color: #28a745;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .edit-button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .treatment-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .treatment-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .treatment-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .treatment-info span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .payment-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .unpaid-status {
+    background-color: #ffe8e8;
+    color: #ff5757;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .send-reminder {
+    background-color: transparent;
+    border: none;
+    color: #ff9900;
+    cursor: pointer;
+  }
+  
+  .general-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .general-info .info p {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .general-info .info span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .edit-checkup, .add-record {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .edit-checkup {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .add-record {
+    background-color: transparent;
+    border: 2px dashed #007bff;
+    color: #007bff;
+  }
+  
+  .title-full {
+    position: relative;
+
+    left:52%;
+  }
+
+
+  .button-full{
+    margin-right: 10px; /* יוצר רווח בין הכפתורים */
+  }

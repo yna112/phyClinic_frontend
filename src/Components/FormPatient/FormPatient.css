@@ -1,0 +1,194 @@
+/* כללי עיצוב טופס */
+.FormPatient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+}
+
+.physiotherapy-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    direction: rtl;
+}
+
+.physiotherapy-form > div {
+    margin-bottom: 15px;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* עיצוב שורות וקבוצות טופס */
+.physiotherapy-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* המרווח בין העמודות */
+}
+
+.physiotherapy-form .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.physiotherapy-form .form-group .date-group {
+     width: 25%;
+}
+
+.physiotherapy-form .form-group.small-input {
+    width: 30%;
+}
+
+.physiotherapy-form .form-group.medium-input {
+    width: 30%; /* Same width as small-input */
+}
+
+/* עיצוב תוויות ושדות קלט */
+.physiotherapy-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.physiotherapy-form input, 
+.physiotherapy-form select, 
+.physiotherapy-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: right;
+}
+
+.physiotherapy-form input[type="text"], 
+.physiotherapy-form input[type="email"], 
+.physiotherapy-form input[type="tel"], 
+.physiotherapy-form input[type="date"],
+.physiotherapy-form select,
+.physiotherapy-form input[type="number"] {
+    width: 100%;
+}
+
+
+
+.physiotherapy-form textarea {
+    width: 70%;
+    height: 90px;
+    min-height: 80px; /* גובה מינימלי שמונע מהשדה להתכווץ יותר מדי */
+    resize: auto; /* מניעת שינוי גובה ידני */
+}
+
+
+/* עיצוב קלטים קטנים ובינוניים */
+.physiotherapy-form .form-group.small-input input,
+.physiotherapy-form .form-group.medium-input input {
+    width: 100%;
+    font-size: 0.8em; /* Smaller font size for smaller inputs */
+    padding: 6px; /* Adjust padding to make inputs smaller */
+}
+
+/* עיצוב כפתורים */
+.physiotherapy-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.physiotherapy-form button:hover {
+    background-color: #45a049;
+}
+
+/* עיצוב פרטי גוף */
+.bodyDetails {
+    display: flex;
+    align-items: center; /* יישור פריטים אנכית למרכז */
+    gap: 10px; /* המרווח בין השדות */
+}
+
+.bodyDetailes input[type="number"] {
+    width: 60%; /* תוכל לשנות את האחוזים לפי הצורך */
+    font-size: 0.8em; /* גודל הפונט, ניתן לשנות אם צריך */
+    padding: 6px; /* ריפוד כדי להתאים לגובה של שדות אחרים */
+}
+
+.physiotherapy-form .bodyDetailes {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* התאמת רוחב השדה לפי הצורך */
+    margin-right: 10px; /* מרווח בין השדות אם יש צורך */
+}
+
+.physiotherapy-form .bodyDetailes label {
+    font-weight: bold;
+    margin-bottom: 5px; /* רווח בין התווית לשדה */
+}
+
+/* עיצוב רמת כאב */
+.pain-scale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pain-scale label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px; /* מרווח בין התוויות */
+}
+
+/* עיצוב מין */
+.gender-radio-group {
+    margin-bottom: 10px;
+}
+
+.gender-radio-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gender-radio-options {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* רווח בין ה-label למאפיינים */
+}
+
+.gender-radio-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.gender-radio-options label {
+    margin-right: 15px; /* רווח בין האופציות */
+}
+
+/* עיצוב סלקטורים קטנים */
+.physiotherapy-form .form-group .small-select {
+    width: 61%; /* תוכל לשנות את האחוזים לפי הצורך */
+    font-size: 0.8em; /* גודל הפונט, ניתן לשנות אם צריך */
+    padding: 6px; /* ריפוד כדי להתאים לגובה של שדות אחרים */
+}
+
+
+.physiotherapy-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box; /* כולל ריפוד בגובה הכולל */
+}
+
+
+.form-section .form-row {
+    gap: 15px; /* הגדלת המרווחים בין שדות */
+}
+
+
