@@ -65,7 +65,6 @@ useEffect(() => {
             const factor=res.data.therapyList
             console.log("TTTRRTRTRT:       "+JSON.stringify(factor))
             setTherapiesByPatientId(factor);
-            console.log("CHECK THIS:"+JSON.stringify(therapiesByPatientId))
 
           })
         .catch(()=>{
@@ -93,10 +92,9 @@ useEffect(() => {
 
       useEffect(()=>{
         const nextTherapyy= sortedFilteredTherapies.find((t) => {
-          return t.date ? t.date >= new Date() : 'אין טיפול'; // מחזיר false במקרה שאין תאריך
+          return t.date ? t.date >= new Date() : 'אין טיפול'; 
       });
   
-     // setNextTherapy(nextTherapyy); // עכשיו אתה יכול לעדכן את nextTherapy
   
       console.log("NEXT THERAPY: "+ nextTherapy);
 

@@ -12,15 +12,12 @@ class DevelopmentGlobals extends Globals{
           }
 }
 
-class ProductionGlobals extends Globals{
+class ProductionGlobals extends Globals {
     public urls = {
-       
-        patient: "https://coppppppuponsbackendcloud-production.up.railway.app/api/therapy",
-        therapy:"http://localcoppppppuponsbackdsendcloudhost:8080/api/home",
-
-      
-     
-    }
+      patient: "https://phyclinic-backend.onrender.com/api/patient",
+      therapy: "https://phyclinic-backend.onrender.com/api/therapy",
+    };
+  
 }
 
 const globals = process.env.NODE_ENV === 'production' ? new ProductionGlobals : new DevelopmentGlobals;
