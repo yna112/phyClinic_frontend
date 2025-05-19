@@ -18,7 +18,7 @@ class WebApi{
 
 
         public async login(userName:string,password:string):Promise<any>{
-         return await axios.post<LoginModel>(this.patient+'/login?userName='+userName+'&password='+password)
+         return await tokenAxios.post<LoginModel>(this.patient+'/login?userName='+userName+'&password='+password)
         }
 
         public async getAllPatients():Promise<any>{
