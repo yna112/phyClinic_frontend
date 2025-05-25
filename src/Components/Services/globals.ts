@@ -3,8 +3,8 @@ class Globals{
 
 class DevelopmentGlobals extends Globals{
     public urls = {
-        patient:"http://localhost:808hgkjg0/api/patient",
-        therapy:"http://localhost:80887gjhg0/api/therapy",
+        patient:"http://localhost:8080/api/patient",
+        therapy:"http://localhost:8080/api/therapy",
 
     
 
