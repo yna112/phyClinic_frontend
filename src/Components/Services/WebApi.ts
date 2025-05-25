@@ -17,9 +17,9 @@ class WebApi{
     private therapy=globals.urls.therapy;
 
 
-        public async login(userName:string,password:string):Promise<any>{
-         return await tokenAxios.post<LoginModel>(this.patient+'/login?userName='+userName+'&password='+password)
-        }
+    public async login(userName: string, password: string): Promise<any> {
+      return await tokenAxios.post<LoginModel>(this.patient + '/login', { userName, password });
+  }
 
         public async getAllPatients():Promise<any>{
 
